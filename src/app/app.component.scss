@@ -1,0 +1,48 @@
+.vital {
+  color: red;
+}
+
+.song-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-admin-list {
+  color: red;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .movie-container {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1.5em 1em;
+    border-radius: 10px;
+    box-shadow: -2px 3px 15px 0px rgba(0, 0, 0, 0.29);
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .movie-container {
+    max-width: calc(50% - 2em);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .movie-container {
+    max-width: calc(25% - 2em);
+  }
+}
